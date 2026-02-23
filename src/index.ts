@@ -41,7 +41,7 @@ const API_BASE = process.env.TRADEX_API_URL || "https://backend.tradex.cards";
 const KEYPAIR_PATH = process.env.TRADEX_KEYPAIR;
 const RPC_URL = process.env.TRADEX_RPC_URL || "https://api.mainnet-beta.solana.com";
 
-const PROGRAM_ID = new PublicKey("8hH5CWo14R5QhaFUuXpxJytchS6NgrhRLHASyVeriEvN");
+const PROGRAM_ID = new PublicKey("TRDXCHHWWZdQXxkGFJxek1KU2hn19687xztNBy99Ca1");
 const USDC_MINT = new PublicKey("EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v");
 const ED25519_PROGRAM = new PublicKey("Ed25519SigVerify111111111111111111111111111");
 const SYSVAR_INSTRUCTIONS = new PublicKey("Sysvar1nstructions1111111111111111111111111");
