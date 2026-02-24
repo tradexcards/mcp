@@ -1,6 +1,6 @@
 {
   "name": "@tradexcards/mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "description": "MCP Server for trading Pokemon card perpetuals on TradeX (Solana). Search cards, check prices, simulate trades, and execute positions.",
   "main": "dist/index.js",
