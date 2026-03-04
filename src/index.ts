@@ -206,7 +206,7 @@ const READ_ONLY_TOOLS = [
         productId: { type: "number", description: "TCGPlayer product ID" },
         side: { type: "string", enum: ["long", "short"], description: "Trade direction" },
         size: { type: "number", description: "Position size in USD (min: $1, max: $100,000)" },
-        leverage: { type: "number", description: "Leverage multiplier (1-50)" },
+        leverage: { type: "number", description: "Leverage multiplier (1-20)" },
       },
       required: ["productId"],
     },
@@ -220,7 +220,7 @@ const READ_ONLY_TOOLS = [
         productId: { type: "number", description: "TCGPlayer product ID" },
         side: { type: "string", enum: ["long", "short"], description: "Trade direction" },
         size: { type: "number", description: "Position size in USD" },
-        leverage: { type: "number", description: "Leverage multiplier (1-50)" },
+        leverage: { type: "number", description: "Leverage multiplier (1-20)" },
       },
       required: ["productId", "side", "size", "leverage"],
     },
@@ -282,7 +282,7 @@ const EXECUTION_TOOLS = [
         productId: { type: "number", description: "TCGPlayer product ID" },
         side: { type: "string", enum: ["long", "short"], description: "Trade direction" },
         size: { type: "number", description: "Position size in USD (min: $1, max: $100,000)" },
-        leverage: { type: "number", description: "Leverage multiplier (1-50)" },
+        leverage: { type: "number", description: "Leverage multiplier (1-20)" },
       },
       required: ["productId", "side", "size", "leverage"],
     },
@@ -684,7 +684,7 @@ server.setRequestHandler(ReadResourceRequestSchema, async (request) => {
 TradeX is a decentralized perpetual futures exchange for Pokemon TCG card prices on Solana.
 
 ## Trading Parameters
-- Max leverage: 50x
+- Max leverage: 20x
 - Min position size: $1 USDC
 - Max position per user: $100,000 USDC
 - Trading fee: 0.05% (5 bps) on open and close
